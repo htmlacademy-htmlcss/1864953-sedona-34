@@ -4,9 +4,151 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+  <body>
+    <header class="page-header">
+      <nav class="navigation">
+        <img class="logo" src="" alt="#">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="about.html" >Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="faq.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">
+                Поиск
+              </span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">
+                Корзина
+              </span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Хочу сюда</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-index">
+      <section class="welcome">
+        <h1 class="visually-hidden">Добро пожаловать</h1>
+        <img class="welcome-image" src="" alt="#">
+      </section>
+
+      <section>
+        <h2 class="main-title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="main-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+
+        <ul class="5-reason-list">
+
+          <li class="1st-reason-item">
+          <h3 class="1st-reason-title">Настоящий городок</h3>
+          <span class="1st-reason-number">&mdash; №1 &mdash;</span>
+          <p class="1st-reason-text">Седона &mdash; не аттракцион для туристов, там течёт своя жизнь</p>
+          <img class="1st-reason-image" src="" alt="#">
+            <ul class="1st-reason-inside-list">
+              <li class="1st-reason-inside-list">
+                <img class="1st-reason-inside-list-image" src="" alt="#">
+                <h3 class="1st-reason-inside-list-header">Жильё</h3>
+                <p class="1st-reason-inside-list-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li class="1st-reason-inside-list">
+                <img class="1st-reason-inside-list-image" src="" alt="#">
+                <h3 class="1st-reason-inside-list-header">Еда</h3>
+                <p class="1st-reason-inside-list-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="1st-reason-inside-list">
+                <img class="1st-reason-inside-list-image" src="" alt="#">
+                <h3 class="1st-reason-inside-list-header">Сувениры</h3>
+                <p class="1st-reason-inside-list-text">Не только китайского, но и настоящего местного производства!</p>
+              </li>
+            </ul>
+          </li>
+
+        <li class="2d-reason-item">
+          <img class="2d-reason-image" src="" alt="#">
+          <h3 class="2d-reason-title">Там есть мост дьявола</h3>
+          <span class="2d-reason-number">&mdash; №2 &mdash;</span>
+        <p class="2d-reason-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        </li>
+
+        <li class="3d-reason-item">
+          <h3 class="3d-reason-title">Небольшая площадь</h3>
+          <span class="3d-reason-number">&mdash; №3 &mdash;</span>
+        <p class="3d-reason-text">Все достопримечательности находятся очень близко</p>
+        </li>
+
+        <li class="4th-reason-item">
+          <h3 class="4th-reason-title">Красивая дорога</h3>
+          <span class="4th-reason-number">&mdash; №4 &mdash;</span>
+        <p class="4th-reason-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
+
+        <li class="5th-reason-item">
+          <h3 class="5th-reason-title">Мало туристов</h3>
+          <span class="5th-reason-number">&mdash; №5 &mdash;</span>
+        <p class="5th-reason-text">Большинство едет в Гранд Каньон и толпится там</p>
+        </li>
+
+      </ul>
+      </section>
+      <section>
+<h2 class="interesting">Заинтересовались?</h2>
+<p class="date">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+<a class="button-hotel" href="#">Поиск гостиницы в Седоне</a>
+      </section>
+      <section>
+<h2>Подпишитесь на рассылку</h2>
+<p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+<form class="newsletter-form" action="" method="post">
+  <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+  <button class="button newsletter-button" type="submit">
+    <span class="visually-hidden">Подписаться</span>
+  </button>
+</form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <section class="footer-social">
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://www.youtube.com/user/">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="phone-number">
+ <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </section>
+      <section class="footer-logo">
+        <img class="footer-logo" src="" alt="#">
+      </section>
+    </footer>
 
   </body>
 </html>
