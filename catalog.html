@@ -9,7 +9,7 @@
 <body>
   <header class="header">
     <nav class="navigation">
-      <img class="logo" src="index.html" alt="Логотип">
+      <img class="logo" src="images/logo/logo.svg" width="139" height="70" alt="Логотип">
       <ul class="1-navigation-list">
         <li class="1-navigation-item">
           <a class="1-navigation-link" href="index.html">Главная</a>
@@ -44,7 +44,7 @@
   </header>
 
     <main class="main-inner">
-      <header class="inner-header">
+      <div class="background">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="1site-navigation">
         <li class="1site-navigation-item">
@@ -58,11 +58,11 @@
     <a class="2site-navigation-link">Гостиницы</a>
   </li>
 </ul>
-</header>
-
-  <h2 class="visually-hidden">Настройки поиска жилья</h2>
+</div>
 
 <form class="infrastructure-filter-group">
+  <h2 class="visually-hidden">Настройки поиска жилья</h2>
+  <fieldset>
   <legend class="infrastructure-filter-title">Инфраструктура:</legend>
     <ul class="infrastructure-filter-list">
       <li class="infrastructure-filter-item">
@@ -84,7 +84,8 @@
         </label>
         </li>
       </ul>
-    </а>
+    </fieldset>
+    <fieldset>
   <legend class="housing-type-title">Тип Жилья:</legend>
   <ul class="housing-type-list">
     <li class="housing-type-item">
@@ -106,11 +107,14 @@
       </label>
     </li>
   </ul>
+</fieldset>
+<fieldset>
   <legend>Стоимость, ₽:</legend>
 <input  type="range" id="price" name="price" min="0" max="9000">
 <label for="price">от 0 до 9000</label>
-<button class="button">Применить</button>
-<a class="reset-link" href="#">Сбросить</a>
+<button class="buttonapply">Применить</button>
+<button class="buttonreset">Сбросить</button>
+</fieldset>
 </form>
 
 
@@ -134,10 +138,10 @@
 
 <ul class="hotel-list">
   <li class="hotel-card">
-    <a href="#"><img class="product-card-image" src="#" alt="Выход из пещеры и звездное небо"></a>
+    <a href="#"><img class="product-card-image" src="images/hotel/hotel-1.jpg" width="300" height="211" alt="Выход из пещеры и звездное небо"></a>
     <a><h4 class="product-card-title">Amara Resort & Spa</h4></a>
     <p class="hotel-card-price">Гостиница</p>
-    <b class="hotel-card-price">От 4000 ₽</b>
+    <p class="hotel-card-price">От 4000 ₽</p>
     <a class="hotel-card-link" href="#">Подробнее</a>
     <button class="hotel-card-button">В избранное</button>
     <div class="raiting">
@@ -147,10 +151,10 @@
   </li>
 
   <li class="hotel-card">
-    <a href="#"><img class="product-card-image" src="#" alt="Леc, скала и радуга"></a>
+    <a href="#"><img class="product-card-image" src="images/hotel/hotel-2.jpg" width="300" height="211" alt="Леc, скала и радуга"></a>
     <a><h4 class="product-card-title">Villas at Poco Diablo</h4></a>
     <p class="hotel-card-price">Гостиница</p>
-    <b class="hotel-card-price">От 5000 ₽</b>
+    <p class="hotel-card-price">От 5000 ₽</p>
     <a class="hotel-card-link" href="#">Подробнее</a>
     <button class="hotel-card-button">В избранном</button>
     <div class="raiting">
@@ -160,10 +164,10 @@
   </li>
 
   <li class="hotel-card">
-    <a href="#"><img class="product-card-image" src="#" alt="Лес и скала"></a>
+    <a href="#"><img class="product-card-image" src="images/hotel/hotel-3.jpg" width="300" height="211" alt="Лес и скала"></a>
     <a><h4 class="product-card-title">Desert Quail Inn</h4></a>
     <p class="hotel-card-price">Гостиница</p>
-    <b class="hotel-card-price">От 2500 ₽</b>
+    <p class="hotel-card-price">От 2500 ₽</p>
     <a class="hotel-card-link" href="#">Подробнее</a>
     <button class="hotel-card-button">В избранное</button>
     <div class="raiting">
@@ -173,10 +177,10 @@
   </li>
 
   <li class="hotel-card">
-    <a href="#"><img class="product-card-image" src="#" alt="Скала и ночь"></a>
+    <a href="#"><img class="product-card-image" src="images/hotel/hotel-4.jpg" width="300" height="211" alt="Скала и ночь"></a>
     <a><h4 class="product-card-title">GreenTree Inn</h4></a>
     <p class="hotel-card-price">Гостиница</p>
-    <b class="hotel-card-price">От 1500 ₽</b>
+    <p class="hotel-card-price">От 1500 ₽</p>
     <a class="hotel-card-link" href="#">Подробнее</a>
     <button class="hotel-card-button">В избранное</button>
     <div class="raiting">
@@ -247,11 +251,13 @@
           </a>
         </li>
       </ul>
-      <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <section>
       <h2 class="visually-hidden">Телефонный номер</h2>
-    <a href="https://htmlacademy.ru/">
-      <img class="footer-logo" src="#" alt="Логотип в подвале">
-      <h5 class="visually-hidden">HTML Academy</h5>
+      <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </section>
+      <a href="index.html">
+      <img class="footer-logo" src="images/logo/HTML Academy.svg" width="115" height="33" alt="Логотип HTML Academy">
+      <h2 class="visually-hidden">HTML Academy</h2>
     </a>
   </footer>
 </body>
