@@ -10,16 +10,16 @@
 <body>
   <header class="header">
     <nav class="navigation">
-      <img class="logo" src="#" alt="Логотип">
+      <img class="logo" src="index.html" alt="Логотип">
       <ul class="1-navigation-list">
         <li class="1-navigation-item">
-          <a class="1-navigation-link" href="about.html">Главная</a>
+          <a class="1-navigation-link" href="index.html">Главная</a>
         </li>
         <li class="1-navigation-item">
-          <a class="1-navigation-link" href="catalog.html">О Седоне</a>
+          <a class="1-navigation-link" href="#">О Седоне</a>
         </li>
         <li class="1-navigation-item">
-          <a class="1-navigation-link" href="faq.html">Гостиницы</a>
+          <a class="1-navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="2-navigation-list">
@@ -124,58 +124,50 @@
   </main>
 
   <footer class="page-footer">
-    <section class="footer-social">
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="button" href="https://vk.com/htmlacademy">
-            <h4 class="visually-hidden">Вконтакте</h4>
+            <span>Вконтакте</span>
           </a>
         </li>
         <li class="footer-social-item">
           <a class="button" href="https://t.me/htmlacademy">
-            <h4 class="visually-hidden">Телеграм</h4>
+            <span>Телеграм</span>
           </a>
         </li>
         <li class="footer-social-item">
           <a class="button" href="https://www.youtube.com/user/">
-            <h4 class="visually-hidden">Ютуб</h4>
+            <span>Ютуб</span>
           </a>
         </li>
       </ul>
-    </section>
-    <section class="phone-number">
       <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <h5 class="visually-hidden">Телефонный номер</h5>
-    </section>
-    <section class="footer-logo">
+      <h2 class="visually-hidden">Телефонный номер</h2>
+    <a href="https://htmlacademy.ru/">
       <img class="footer-logo" src="#" alt="Логотип в подвале">
-      <h5 class="visually-hidden">Логотип в подвале</h5>
-    </section>
+      <h5 class="visually-hidden">HTML Academy</h5>
+    </a>
   </footer>
-  <form action="#" method="post">
+
+  <form action="https://echo.htmlacademy.ru" method="post">
     <h5>Поиск гостиницы в Седоне</h5>
 <div class="check-in">
-      <label for="date">Дата Заезда:</label>
+      <label for="date">Дата заезда:</label>
 <input type="date" id="date" name="date" value="2020-04-27">
     </div>
 <p>Мы не можем отправить вас в прошлое.</p>
 <div class="departure">
-      <label for="date">Дата Выезда:</label>
-<input type="date" value="2021-09-01">
+      <label for="2date">Дата выезда:</label>
+<input type="date" id="2date" value="2021-09-01">
     </div>
 <p>На эти даты есть свободные номера. Пока есть.</p>
-<div class="adults">
 <label for="amount">Взрослые</label>
-</div>
 <input type="number" id="amount" value="2">
-<div class="child">
-<label for="amount">Дети</label>
-</div>
-<input type="text" placeholder="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">
+<label for="2amount">Дети</label>
+<input type="text" id="2amount">
+<p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
 <input type="number" value="1">
-<div class="buttons">
-<input type="submit" value="Найти">
-</div>
+<button class="buttonsearch" type="submit">Найти</button>
 </form>
 </body>
 </html>
