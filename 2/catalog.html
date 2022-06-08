@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
   <base href="https://htmlacademy-htmlcss.github.io/1864953-sedona-34/2/">
 </head>
 
 <body>
   <header class="header">
     <nav class="navigation">
-      <img class="logo" src="images/logo/logo.svg" width="139" height="70" alt="Логотип">
+      <a href="index.html"><img class="logo" src="images/logo/logo.svg" width="139" height="70" alt="Логотип"></a>
       <ul class="1-navigation-list">
         <li class="1-navigation-item">
           <a class="1-navigation-link" href="index.html">Главная</a>
@@ -113,9 +114,11 @@
   <legend>Стоимость, ₽:</legend>
 <input  type="range" id="price" name="price" min="0" max="9000">
 <label for="price">от 0 до 9000</label>
+</fieldset>
+<div>
 <button class="buttonapply">Применить</button>
 <button class="buttonreset">Сбросить</button>
-</fieldset>
+</div>
 </form>
 
 
@@ -214,10 +217,10 @@
 
 <p>Гостиниц на странице:</p>
 <select class="2select-control" aria-label="Сортировка количество гостиниц">
-  <option value="one">1</option>
-  <option value="two">2</option>
-  <option value="three">3</option>
   <option value="four">4</option>
+  <option value="ten">10</option>
+  <option value="twenty">20</option>
+  <option value="fifty">50</option>
 </select>
 
 <section>
@@ -257,7 +260,7 @@
       <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
       <a href="index.html">
-      <img class="footer-logo" src="images/logo/HTML Academy.svg" width="115" height="33" alt="Логотип HTML Academy">
+      <img class="footer-logo" src="images/logo/htmlacademy.svg" width="115" height="33" alt="Логотип HTML Academy">
       <h2 class="visually-hidden">HTML Academy</h2>
     </a>
   </footer>
