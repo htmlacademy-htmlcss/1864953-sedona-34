@@ -10,7 +10,7 @@
 <body>
   <header class="header">
     <nav class="navigation">
-      <img class="logo" src="index.html" alt="Логотип">
+      <img class="logo" src="images/logo/logo.svg" width="139" height="70" alt="Логотип">
       <ul class="1-navigation-list">
         <li class="1-navigation-item">
           <a class="1-navigation-link" href="index.html">Главная</a>
@@ -47,7 +47,7 @@
   <main class="main-index">
     <section class="welcome">
       <h1 class="visually-hidden">Добро пожаловать</h1>
-      <img class="welcome-image" src="#" alt="Добро пожаловать">
+      <img class="welcome-image" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать">
     </section>
 
     <section>
@@ -60,7 +60,7 @@
           <h3 class="reason-title">Настоящий городок</h3>
           <span class="reason-number">&mdash; №1 &mdash;</span>
           <p class="reason-text">Седона &mdash; не аттракцион для туристов, там течёт своя жизнь</p>
-          <img class="reason-image" src="#" alt="Седона домики">
+          <img class="reason-image" src="images/advantages/photo-1.jpg" width="800" height="384" alt="Седона домики">
           <ul class="reason-inside-list">
             <li class="reason-subtitle-list">
               <h3 class="reason-subtitle-header">Жильё</h3>
@@ -79,7 +79,7 @@
         </li>
 
         <li class="reason-item">
-          <img class="reason-image" src="#" alt="Мост дьявола">
+          <img class="reason-image" src="images/advantages/photo-2.jpg" width="800" height="384" alt="Мост дьявола">
           <h3 class="reason-title">Там есть мост дьявола</h3>
           <span class="reason-number">&mdash; №2 &mdash;</span>
           <p class="reason-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -141,32 +141,39 @@
           </a>
         </li>
       </ul>
-      <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <section>
       <h2 class="visually-hidden">Телефонный номер</h2>
-    <a href="https://htmlacademy.ru/">
-      <img class="footer-logo" src="#" alt="Логотип в подвале">
-      <h5 class="visually-hidden">HTML Academy</h5>
+      <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </section>
+      <a href="index.html">
+        <img class="footer-logo" src="images/logo/HTML Academy.svg" width="115" height="33" alt="Логотип HTML Academy">
+      <h2 class="visually-hidden">HTML Accademy</h2>
     </a>
   </footer>
 
   <form action="https://echo.htmlacademy.ru" method="post">
-    <h5>Поиск гостиницы в Седоне</h5>
+    <h2>Поиск гостиницы в Седоне</h2>
 <div class="check-in">
-      <label for="date">Дата заезда:</label>
+<fieldset>
+<label for="date">Дата заезда:</label>
 <input type="date" id="date" name="date" value="2020-04-27">
-    </div>
 <p>Мы не можем отправить вас в прошлое.</p>
+</fieldset>
+</div>
+<fieldset>
 <div class="departure">
-      <label for="2date">Дата выезда:</label>
+    <label for="2date">Дата выезда:</label>
 <input type="date" id="2date" value="2021-09-01">
     </div>
 <p>На эти даты есть свободные номера. Пока есть.</p>
+</fieldset>
+<fieldset>
 <label for="amount">Взрослые</label>
 <input type="number" id="amount" value="2">
 <label for="2amount">Дети</label>
 <input type="text" id="2amount">
 <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-<input type="number" value="1">
+</fieldset>
 <button class="buttonsearch" type="submit">Найти</button>
 </form>
 </body>
