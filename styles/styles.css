@@ -2,7 +2,7 @@
 font-family: "PT Sans";
 font-style: normal;
 font-weight: 400;
-src: url("style.css/style/../fonts/ptsans-400.woff2") format("woff2");
+src: url("../fonts/ptsans-400.woff2") format("woff2");
 font-display: swap;
 }
 
@@ -10,7 +10,7 @@ font-display: swap;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("style.css/style/../fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@ font-display: swap;
   font-family: "PT Sans";
   font-style: italic;
   font-weight: 700;
-  src: url("style.css/style/../fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -48,7 +48,7 @@ body {
 .main-index {
   color: #000000;
   background-color: #ffffff;
-  background-image: url("style.css/style/../images/background/index-background.jpg");
+  background-image: url("../images/background/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -93,7 +93,14 @@ body {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+}
 
+.background-newsletter  {
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url("../images/background/background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .button-newsletter {
@@ -174,13 +181,7 @@ body {
   text-transform: uppercase;
 }
 
-.2site-navigation-link {
-  color: #ffffff;
-}
-
-.infrastructure-filter-title
-.housing-type-title
-.price-type-title {
+.filter-title {
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
@@ -201,11 +202,11 @@ body {
   background-color: #ffffff;
 }
 
-.hotels-link (
+.hotels-link {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-)
+}
 
 .buttonapply {
   font-family: "PT Sans";
@@ -238,7 +239,7 @@ body {
   text-transform: uppercase;
 }
 
-.hotel-card-button (
+.hotel-card-button {
   font-family: "PT Sans";
   font-size: 16px;
   line-height: 20px;
@@ -248,9 +249,9 @@ body {
   background-color: #82B3D3;
   text-decoration: none;
   text-transform: uppercase;
-)
+}
 
-.hotel-card-green-button (
+.hotel-card-green-button {
   font-family: "PT Sans";
   font-size: 16px;
   line-height: 20px;
@@ -260,9 +261,9 @@ body {
   background-color: #7DB54F;
   text-decoration: none;
   text-transform: uppercase;
-)
+}
 
-.hotel-card-raiting-button (
+.hotel-card-raiting-button {
   font-family: "PT Sans";
   font-size: 16px;
   line-height: 20px;
@@ -272,7 +273,7 @@ body {
   background-color: #F2F2F2;
   text-decoration: none;
   text-transform: uppercase;
-)
+}
 
 .product-card-title {
   font-weight: 700;
