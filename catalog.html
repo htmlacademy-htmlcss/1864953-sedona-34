@@ -59,8 +59,6 @@
     <a class="2site-navigation-link">Гостиницы</a>
   </li>
 </ul>
-</div>
-
 <form class="infrastructure-filter-group">
   <h2 class="visually-hidden">Настройки поиска жилья</h2>
   <fieldset>
@@ -114,13 +112,10 @@
 <input  type="range" id="price" name="price" min="0" max="9000">
 <label for="price">от 0 до 9000</label>
 </fieldset>
-<div>
-<button class="buttonapply">Применить</button>
+<div><button class="buttonapply">Применить</button>
 <button class="buttonreset">Сбросить</button>
+</form></div>
 </div>
-</form>
-
-
 <a class="hotels-link" href="#">Найдено гостиниц:38</a>
 
 <select class="select-control" aria-label="Сортировка по приоритетности">
@@ -146,7 +141,7 @@
     <p class="hotel-card-price">Гостиница</p>
     <p class="hotel-card-price">От 4000 ₽</p>
     <a class="hotel-card-link" href="#">Подробнее</a>
-    <button class="hotel-card-button">В избранное</button>
+    <button class="hotel-button">В избранное</button>
     <div class="raiting">
     <span>Четыре звезды</span>
     </div>
@@ -159,7 +154,7 @@
     <p class="hotel-card-price">Гостиница</p>
     <p class="hotel-card-price">От 5000 ₽</p>
     <a class="hotel-card-link" href="#">Подробнее</a>
-    <button class="hotel-card-green-button">В избранном</button>
+    <button class="hotel-button hotel-button-active">В избранном</button>
     <div class="raiting">
     <span>Четыре звезды</span>
     </div>
@@ -172,7 +167,7 @@
     <p class="hotel-card-price">Гостиница</p>
     <p class="hotel-card-price">От 2500 ₽</p>
     <a class="hotel-card-link" href="#">Подробнее</a>
-    <button class="hotel-card-button">В избранное</button>
+    <button class="hotel-button">В избранное</button>
     <div class="raiting">
     <span>Три звезды</span>
     </div>
@@ -185,7 +180,7 @@
     <p class="hotel-card-price">Гостиница</p>
     <p class="hotel-card-price">От 1500 ₽</p>
     <a class="hotel-card-link" href="#">Подробнее</a>
-    <button class="hotel-card-button">В избранное</button>
+    <button class="hotel-button">В избранное</button>
     <div class="raiting">
     <span>Две звезды</span>
     </div>
@@ -227,8 +222,8 @@
   <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
   <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
     <label>
-      <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-        required>
+      <label>Ваш e-mail<input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+        required></label>
     Ваш e-mail
     </label>
     <button class="button-newsletter" type="submit">Подписаться</button>
