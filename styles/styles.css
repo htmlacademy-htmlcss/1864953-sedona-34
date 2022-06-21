@@ -59,7 +59,7 @@ input, select, button {font-family: inherit}
   background-repeat: no-repeat;
 }
 
-.reason-text {
+.advantages-list {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -68,30 +68,26 @@ input, select, button {font-family: inherit}
   text-align: center;
 }
 
-.five-reason-list {
-  text-align: center;
-}
-
-.reason-title {
+.advantages-title {
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
-.reason-list-white {
+.advantages-list-white {
   background-color: #ffffff;
 }
 
-.reason-list-dark-grey {
+.advantages-list-dark-grey {
   background: rgba(131, 179, 211, 0.2);
 }
 
-.reason-list-grey {
+.advantages-list-grey {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.reason-list-blue {
+.advantages-list-blue {
   background-color: #82B3D3;
 }
 
@@ -127,15 +123,20 @@ input, select, button {font-family: inherit}
   text-transform: uppercase;
 }
 
-.background-newsletter  {
-  color: #000000;
-  background-color: #ffffff;
-  background-image: url("../images/background/background.jpg");
+.subscribe  {
   background-size: 100% auto;
   background-repeat: no-repeat;
+  color: #000000;
+  background-color: #ffffff;
 }
 
-.button-newsletter {
+.subscribe-bright {
+  color: #ffffff;
+  background-color: #82B3D3;
+  background-image: url("../images/background/background.jpg");
+}
+
+.subscribe-button {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -146,7 +147,7 @@ input, select, button {font-family: inherit}
   text-transform: uppercase;
 }
 
-.newsletter-form {
+.subscribe-form {
   text-align: center;
 }
 
@@ -270,6 +271,7 @@ input, select, button {font-family: inherit}
   line-height: 20px;
   color: #FFFFFF;
   text-align: center;
+  background-color: #82B3D3;
 }
 
 .hotel-card-link {
@@ -324,11 +326,19 @@ input, select, button {font-family: inherit}
   line-height: 21px;
   font-weight: 400;
   color: #333333;
-  text-transform: uppercase;
 }
 
 .pagination {
   background-color: #ffffff;
+}
+
+.subscribe-title {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 .pagination-link {
