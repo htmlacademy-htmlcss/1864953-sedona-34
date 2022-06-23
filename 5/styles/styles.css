@@ -35,14 +35,14 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #E5E5E5;
 }
 
 input, select, button {font-family: inherit}
 
 .container {
 margin: 0 auto;
-width: 960px;
+width: 1200px;
 }
 
 .header {
@@ -52,7 +52,7 @@ width: 960px;
 
 .navigation {
   display: flex;
-  width: 1000px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -87,7 +87,7 @@ width: 960px;
 }
 
 .page-container {
-  width: 1000px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -223,8 +223,9 @@ width: 960px;
 
 .page-footer-container {
   display: flex;
-  width: 1000px;
+  width: 1200px;
   margin: 0 auto;
+  flex: 0 0 auto;
 }
 
 .page-footer a {
@@ -239,6 +240,10 @@ width: 960px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.infrastructure-filter-group {
+  display: flex;
 }
 
 .form-title-search {
@@ -312,6 +317,12 @@ width: 960px;
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
+}
+
+.hotel-list {
+  display: flex;
+  width: 340px;
+  margin-right: 18px;
 }
 
 .hotels-link {
