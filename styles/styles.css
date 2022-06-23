@@ -22,7 +22,15 @@ font-display: swap;
   font-display: swap;
 }
 
+html {
+height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -32,9 +40,32 @@ body {
 
 input, select, button {font-family: inherit}
 
+.container {
+margin: 0 auto;
+width: 960px;
+}
+
 .header {
   color: #000000;
   background-color: #ffffff;
+}
+
+.navigation {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 430px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
 }
 
 .user-navigation {
@@ -51,6 +82,20 @@ input, select, button {font-family: inherit}
   text-transform: uppercase;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
 .welcome {
   color: #000000;
   background-color: #82B3D3;
@@ -60,12 +105,20 @@ input, select, button {font-family: inherit}
 }
 
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+}
+
+.advantages-item {
+  width: 400px;
 }
 
 .advantages-title {
@@ -151,11 +204,27 @@ input, select, button {font-family: inherit}
   text-align: center;
 }
 
+.footer-social-list {
+  width: 142px;
+  margin-right: 10px;
+}
+
+.footer-logo {
+  width: 115px;
+  margin-left: 10px;
+}
+
 .page-footer {
   font-size: 14px;
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 .page-footer a {
@@ -271,7 +340,7 @@ input, select, button {font-family: inherit}
   line-height: 20px;
   color: #FFFFFF;
   text-align: center;
-  background-color: #82B3D3;
+  background: rgba(0, 0, 0, 0);
 }
 
 .hotel-card-link {
