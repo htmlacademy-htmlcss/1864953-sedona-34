@@ -8,6 +8,7 @@
 </head>
 
 <body>
+  <div class="container">
   <header class="header">
     <nav class="navigation">
       <a href="index.html"><img class="logo" src="images/logo/logo.svg" width="139" height="70" alt="Логотип"></a>
@@ -44,7 +45,8 @@
     </nav>
   </header>
 
-    <main class="main-inner">
+  <main class="main-container main-index">
+    <div class="page-container">
       <div class="background">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="1site-navigation">
@@ -82,8 +84,9 @@
         Wi-Fi
         </label>
         </li>
+      </fieldset>
       </ul>
-    </fieldset>
+    </form>
     <fieldset>
   <legend class="filter-title">Тип Жилья:</legend>
   <ul class="housing-type-list">
@@ -112,9 +115,10 @@
 <input  type="range" id="price" name="price" min="0" max="9000">
 <label for="price">от 0 до 9000</label>
 </fieldset>
-<div><button class="buttonapply">Применить</button>
+<div>
+<button class="buttonapply">Применить</button>
 <button class="buttonreset">Сбросить</button>
-</form></div>
+</div>
 </div>
 <a class="hotels-link" href="#">Найдено гостиниц:38</a>
 
@@ -229,9 +233,11 @@
     <button class="subscribe-button" type="submit">Подписаться</button>
   </form>
 </section>
+</div>
   </main>
 
   <footer class="page-footer">
+    <div class="page-footer-container">
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="button" href="https://vk.com/htmlacademy">
@@ -256,7 +262,9 @@
       <a href="https://htmlacademy.ru">
       <img class="footer-logo" src="images/logo/htmlacademy.svg" width="115" height="33" alt="Логотип HTML Academy">
     </a>
+    </div>
   </footer>
+</div>
 </body>
 </html>
 
