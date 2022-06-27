@@ -28,7 +28,6 @@ height: 100%;
 
 body {
   margin: 0;
-  flex-direction: column;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -39,9 +38,20 @@ body {
 
 input, select, button {font-family: inherit}
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
 display: flex;
-min-height: 100%;
+min-height: 100vh;
 margin: 0 auto;
 width: 1200px;
 background-color: #ffffff;
@@ -58,6 +68,8 @@ background-color: #ffffff;
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 430px;
   margin: 0;
   padding: 0;
@@ -69,11 +81,18 @@ background-color: #ffffff;
   margin-left: auto;
 }
 
+.navigation-user .navigation-link {
+  min-width: 42px;
+  min-height: 66px;
+}
+
 .user-navigation {
   text-decoration: none;
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 19px;
   font-family: "PT Sans", sans-serif;
   line-height: 26px;
   font-weight: 700;
@@ -98,6 +117,15 @@ background-color: #ffffff;
   background-image: url("../images/background/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  margin-bottom: 145px;
+}
+
+.main-title {
+  margin-bottom: 31px;
+}
+
+.main-description {
+  margin-bottom: 90px;
 }
 
 .advantages-list {
@@ -111,6 +139,7 @@ background-color: #ffffff;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  list-style-type: none;
 }
 
 .advantages-item {
@@ -122,6 +151,14 @@ background-color: #ffffff;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  padding-top: 92px;
+  padding-bottom: 30px;
+}
+
+.advantages-subtitle-header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
 }
 
 .advantages-list-white {
@@ -140,6 +177,14 @@ background-color: #ffffff;
   background-color: #82B3D3;
 }
 
+.advantages-text {
+  margin: 0;
+}
+
+.advantages-subtitle-text {
+  margin: 0;
+}
+
 .reason-subtitle-header {
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
@@ -153,6 +198,12 @@ background-color: #ffffff;
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  padding-bottom: 29px;
+  padding-top: 91px;
+}
+
+.date {
+padding-bottom: 56px;
 }
 
 .interestingsearch {
@@ -170,6 +221,7 @@ background-color: #ffffff;
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+  padding-bottom: 93px;
 }
 
 .subscribe  {
@@ -198,11 +250,24 @@ background-color: #ffffff;
 
 .subscribe-form {
   text-align: center;
+  padding-bottom: 94px;
 }
 
 .footer-social-list {
-  width: 142px;
-  margin-right: 10px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-social-item {
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+.footer-social-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .footer-logo {
@@ -276,9 +341,19 @@ background-color: #ffffff;
 }
 
 .inner-header-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 60px;
   line-height: 78px;
   text-transform: uppercase;
+}
+
+.site-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  list-style-type: none;
 }
 
 .filter-title {
@@ -294,8 +369,17 @@ background-color: #ffffff;
 }
 
 .select-control {
+  display: flex;
+  margin-bottom: 50px;
+  padding: 56px;
   color: #000000;
   background-color: #ffffff;
+
+}
+
+.first-button {
+  width: 48px;
+  height: 48px;
 }
 
 .hotel-card {
@@ -314,7 +398,9 @@ background-color: #ffffff;
 .hotel-list {
   display: flex;
   width: 340px;
-  margin-right: 18px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .hotels-link {
@@ -401,7 +487,27 @@ background-color: #ffffff;
 }
 
 .pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-container {
+  display: flex;
+  padding: 25px;
   background-color: #ffffff;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 96px 25px;
+  line-height: 36px;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .subscribe-title {
@@ -411,6 +517,8 @@ background-color: #ffffff;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  padding-top: 94px;
+  padding-bottom: 29px;
 }
 
 .pagination-link {
