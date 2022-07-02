@@ -139,7 +139,6 @@ background-color: #ffffff;
   padding: 0;
   font-family: "PT Sans";
   font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -153,10 +152,10 @@ background-color: #ffffff;
 .advantages-item {
   outline: 3px solid #ff000088;
   outline-offset: -3px;
-  width: 400px;
+  width: 33.33%;
 }
 
-.advantages-list-town {
+.advantages-item-town {
   width: 100%;
 }
 
@@ -175,39 +174,33 @@ background-color: #ffffff;
 
 }
 
-.advantages-list-food {
+.advantages-item-food {
   background-color: #ffffff;
-  width: 33,33%;
 }
 
-.advantages-list-housing {
+.advantages-item-housing {
   background: rgba(131, 179, 211, 0.12);
-  width: 33,33%;
 }
 
-.advantages-list-souvenirs {
+.advantages-item-souvenirs {
   background-color: rgba(131, 179, 211, 0.12);
-  width: 33,33%;
 }
 
-.advantages-list-devil {
+.advantages-item-devil {
   background-color: #82B3D3;
   width: 100%;
 }
 
-.advantages-list-close {
+.advantages-item-close {
   background: rgba(131, 179, 211, 0.12);
-  width: 33,33%;
 }
 
-.advantages-list-road {
+.advantages-item-road {
   background: rgba(131, 179, 211, 0.2);
-  width: 33,33%;
 }
 
-.advantages-list-tourists {
+.advantages-item-tourists {
   background-color: rgba(131, 179, 211, 0.12);
-  width: 33,33%;
 }
 
 .advantages-text {
