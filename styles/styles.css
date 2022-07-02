@@ -151,6 +151,8 @@ background-color: #ffffff;
 }
 
 .advantages-item {
+  outline: 3px solid #ff000088;
+  outline-offset: -3px;
   width: 400px;
 }
 
