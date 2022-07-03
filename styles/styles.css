@@ -168,16 +168,16 @@ background-color: #ffffff;
 
 .advantages-item-town {
   display: flex;
-  width: 100%;
+  width: 1200px;
   background-color: #82B3D3;
 }
 
 .town-text {
-  width: 33.33%;
+  width: 400px;
 }
 
 .advantages-image {
-  width: 66.66%;
+  width: 800px;
 }
 
 .advantages-item-food {
