@@ -168,6 +168,7 @@ background-color: #ffffff;
 
 .advantages-item-town {
   display: flex;
+  flex-wrap: wrap;
   width: 1200px;
   background-color: #82B3D3;
 }
@@ -193,8 +194,14 @@ background-color: #ffffff;
 }
 
 .advantages-item-devil {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
   background-color: #82B3D3;
-  width: 100%;
+}
+
+.devil-text {
+  width: 400px;
 }
 
 .advantages-item-close {
