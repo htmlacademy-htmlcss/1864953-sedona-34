@@ -93,7 +93,23 @@ outline-offset: -3px;
 }
 
 .user-navigation {
+  background-color: #ff000088;
+  padding-top: 23.45px;
+  padding-bottom: 24.45px;
+  padding-left: 11.97px;
+  padding-right: 11.97px;
+}
+
+.user-navigation-appointment {
   text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  background: #756157;
+  color: #ffffff;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .navigation-link {
@@ -105,7 +121,6 @@ outline-offset: -3px;
   text-align: center;
   color: #000000;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .main-container {
@@ -115,14 +130,13 @@ outline-offset: -3px;
 .logo {
   display: block;
   margin: 0 auto;
-  margin-bottom: 83px;
+  padding-left: 70px;
 }
 
 .welcome {
   color: #000000;
   background-color: #82B3D3;
-  background-image: url("../images/background/index-background.jpg");
-  background-image: url("../images/welcome/zigzag.svg");
+  background-image: url("../images/background/index-background.jpg"), url("../images/welcome/zigzag.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   margin-bottom: 145px;
