@@ -77,6 +77,11 @@ background-color: #ffffff;
   list-style: none;
 }
 
+.navigation-item {
+outline: 3px solid #ff000088;
+outline-offset: -3px;
+}
+
 .navigation-user {
   max-width: 300px;
   margin-left: auto;
@@ -127,12 +132,17 @@ background-color: #ffffff;
 
 .main-title {
   margin-bottom: 31px;
-  text-align: center
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 290px;
+  padding-right: 290px;
 }
 
 .main-description {
   margin-bottom: 90px;
-  text-align: center
+  text-align: center;
+  padding-left: 273px;
+  padding-right: 273px;
 }
 
 .advantages-list {
@@ -195,6 +205,11 @@ background-color: #ffffff;
 
 .advantages-item-food {
   background-color: #ffffff;
+}
+
+.advantages-number {
+margin-top: 30px;
+margin-bottom: 30px;
 }
 
 .food-text {
@@ -301,6 +316,10 @@ padding-bottom: 56px;
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .subscribe  {
@@ -352,13 +371,14 @@ padding-bottom: 56px;
 }
 
 .page-footer {
+  display: flex;
   font-size: 14px;
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
-  display: flex;
   margin: 0 auto;
   flex: 0 0 auto;
+  width: 1200px;
 }
 
 .page-footer a {
@@ -373,6 +393,7 @@ padding-bottom: 56px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+
 }
 
 .infrastructure-filter-group {
