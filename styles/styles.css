@@ -110,8 +110,6 @@ outline-offset: -3px;
 
 .main-container {
   flex-grow: 1;
-  padding-top: 51px;
-  padding-bottom: 83px;
 }
 
 .logo {
@@ -124,6 +122,7 @@ outline-offset: -3px;
   color: #000000;
   background-color: #82B3D3;
   background-image: url("../images/background/index-background.jpg");
+  background-image: url("../images/welcome/zigzag.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   margin-bottom: 145px;
@@ -308,6 +307,7 @@ padding-bottom: 56px;
 
 
 .button-hotel {
+  display: inline-block;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -405,6 +405,7 @@ padding-bottom: 56px;
 }
 
 .form-title-search {
+  width: 574px;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
