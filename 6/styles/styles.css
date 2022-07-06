@@ -83,13 +83,8 @@ outline-offset: -3px;
 }
 
 .navigation-user {
-  max-width: 300px;
-  margin-left: auto;
-}
-
-.navigation-user .navigation-link {
-  min-width: 42px;
-  min-height: 66px;
+  padding-left: 70px;
+  padding-top: 14px;
 }
 
 .user-navigation {
