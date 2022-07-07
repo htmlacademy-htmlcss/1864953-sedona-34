@@ -105,6 +105,7 @@ outline-offset: -3px;
   padding-bottom: 8px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -134,8 +135,14 @@ outline-offset: -3px;
   background-image: url("../images/background/index-background.jpg"), url("../images/welcome/zigzag.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  margin-bottom: 145px;
+  margin-bottom: 82px;
   text-align: center;
+  width: 1200px;
+  height: 485px;
+}
+
+.welcome-image {
+  padding-top: 51px;
 }
 
 .main-title {
