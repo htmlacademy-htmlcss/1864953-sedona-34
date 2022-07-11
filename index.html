@@ -43,12 +43,8 @@
 
     <main class="main-container main-index">
       <section class="welcome">
-       <div class="welcome-background">
-       <div class="welcome-zigzag">
         <h1 class="visually-hidden">Добро пожаловать</h1>
         <img class="welcome-image" src="images/welcome/welcome.svg" width="458" height="352" alt="Добро пожаловать"/>
-       </div>
-       </div>
       </section>
 
       <section>
@@ -209,33 +205,38 @@
       </div>
     </footer>
 
+    <section class="appointment">
+      <h2 class="appointment-title">Поиск гостиницы в Седоне</h2>
     <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-      <section class="form-name">
-      <h2 class="form-title-search">Поиск гостиницы в Седоне</h2>
-      </section>
-      <section class="form-arrival-date">
-       <label for="arrival-date" class="search-options">Дата Заезда:</label>
-       <input class="field" type="date" id="arrival-date" name="date" value="2020-04-27">
+      <p class="field-group appointment-form-arrival">
+       <label class="form-label" for="appointment-arrival">Дата Заезда:</label>
+       <input class="field" type="date" id="appointment-arrival" name="appointment-arrival" value="2020-04-27">
        <p class="form-arrival-comment">Мы не можем отправить вас в прошлое.</p>
-      </section>
-      <section class="form-departure-date">
-       <label for="departure-date" class="search-options">Дата Выезда:</label>
-       <input class="field" type="date" id="departure-date" value="2021-09-01">
+      <p class="field-group appointment-form-departure">
+       <label class="form-label" for="appointment-departure">Дата Выезда:</label>
+       <input class="field" type="date" id="appointment-departure" name="appointment-departure" value="2021-09-01">
+      </p>
       <p class="form-departure-comment">На эти даты есть свободные номера. Пока есть.</p>
-      </section>
-      <section class="form-amount">
-       <label for="amount" class="search-options">Взрослые:</label>
-       <input class="field" type="number" id="amount" value="2"/>
-      </section>
-      <section class="form-child-amount">
-       <label for="child-amount" class="search-options">Дети:</label>
-       <input class="field" type="text" id="child-amount" value="1">
-       <p>
-       Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-       </p>
-      </section>
+      <p class="field-group appointment-form-adults">
+       <label class="form-label" for="appointment-adults">Взрослые:</label>
+       <input class="field" type="number" id="appointment-adults" name="appointment-adults" value="2"/>
+      </p>
+      <p class="field-group appointment-form-child">
+       <span class="form-label form-label-icon">
+       <label class="form-label" for="appointment-child">Дети:</label>
+       <span class="tooltip">
+        <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+          <svg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#fff"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h1v9H0z"/></clipPath></defs></svg>
+        </button>
+        <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+      </span>
+       </span>
+       </span>
+       <input class="field" type="text" id="appointment-child" name="appointment-child" value="1">
+       <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
        <button class="searchbutton" type="submit">Найти</button>
     </form>
+    </section>
 
   </div>
 </body>
