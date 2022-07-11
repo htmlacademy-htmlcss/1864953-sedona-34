@@ -64,50 +64,62 @@
       <div class="catalog-filter">
         <form class="infrastructure-filter-group">
           <h2 class="visually-hidden">Настройки поиска жилья</h2>
-          <section>
+          <fieldset>
             <legend class="filter-title">Инфраструктура:</legend>
             <ul class="infrastructure-filter-list">
               <li class="infrastructure-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="swimming-pool" checked/> Бассейн
+                  <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Бассейн</span>
                 </label>
               </li>
               <li class="infrastructure-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="parking" checked/> Парковка
+                  <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Парковка</span>
                 </label>
               </li>
               <li class="infrastructureg-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="wi-fi"/> Wi-Fi
+                  <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Wi-Fi</span>
                 </label>
               </li>
             </ul>
-          </section>
+          </fieldset>
         </form>
-        <section>
-          <legend class="filter-title">Тип Жилья:</legend>
+
+        <fieldset class="housing-type-group">
+          <legend class="housing-type-title">Тип Жилья:</legend>
           <ul class="housing-type-list">
             <li class="housing-type-item">
               <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="shaving-supplies" checked/> Гостиница
+                <input class="visually-hidden control-input" type="radio" name="product-group" value="shaving-supplies" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Гостиница</span>
               </label>
             </li>
             <li class="housing-type-item">
               <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="care-products"/> Мотель
+                <input class="visually-hidden control-input" type="radio" name="product-group" value="care-products">
+                <span class="control-mark"></span>
+                <span class="control-label">Мотель</span>
               </label>
             </li>
             <li class="housing-type-item">
               <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="accessories"/> Апартаменты
+                <input class="visually-hidden control-input" type="radio" name="product-group" value="accessories">
+                <span class="control-mark"></span>
+                <span class="control-label">Апартаменты</span>
               </label>
             </li>
           </ul>
-        </section>
+        </fieldset>
 
-
-        <section class="catalog-filter-group">
+        <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
           <div class="range">
             <div class="range-scale">
@@ -129,9 +141,7 @@
               </label>
             </div>
           </div>
-
-
-        </section>
+        </fieldset>
         <div>
           <input class="buttonapply" type="submit" value="Применить">
           <button class="buttonreset" type="reset">Сбросить</button>
@@ -139,10 +149,9 @@
       </div>
     </div>
 
-      <section class="catalog-products">
-
-      <div class="catalog-top-column">
-      <h2>Найдено гостиниц:38</h2>
+      <div class="catalog-products">
+      <div class="sorting-container">
+      <h2 class="sorting-title">Найдено гостиниц:38</h2>
       <div class="select sorting-type">
       <select class="select-control" aria-label="Сортировка по приоритетности">
         <option value="cheap">Сначала дешевые</option>
@@ -150,17 +159,17 @@
         <option value="expensive">Сначала дорогие</option>
       </select>
       </div>
-      <a href="#" class="card-grid-toggle" type="button">
-        <svg aria-hidden="true" focusable="false" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 17h-4v6h4v-6ZM32 17h-4v6h4v-6ZM26 17h-4v6h4v-6ZM20 25h-4v6h4v-6ZM32 25h-4v6h4v-6ZM26 25h-4v6h4v-6Z" fill="#000"/><path d="M4 2h40v-4H4v4Zm42 2v40h4V4h-4Zm-2 42H4v4h40v-4ZM2 44V4h-4v40h4Zm2 2a2 2 0 0 1-2-2h-4a6 6 0 0 0 6 6v-4Zm42-2a2 2 0 0 1-2 2v4a6 6 0 0 0 6-6h-4ZM44 2a2 2 0 0 1 2 2h4a6 6 0 0 0-6-6v4ZM4-2a6 6 0 0 0-6 6h4a2 2 0 0 1 2-2v-4Z" fill="#E5E5E5"/></svg>
+      <a href="#" class="card-grid-toggle card-grid-toggle-current">
         <span class="visually-hidden">Показать карточки</span>
+        <svg aria-hidden="true" focusable="false" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 17h-4v6h4v-6ZM32 17h-4v6h4v-6ZM26 17h-4v6h4v-6ZM20 25h-4v6h4v-6ZM32 25h-4v6h4v-6ZM26 25h-4v6h4v-6Z" fill="#000"/><path d="M4 2h40v-4H4v4Zm42 2v40h4V4h-4Zm-2 42H4v4h40v-4ZM2 44V4h-4v40h4Zm2 2a2 2 0 0 1-2-2h-4a6 6 0 0 0 6 6v-4Zm42-2a2 2 0 0 1-2 2v4a6 6 0 0 0 6-6h-4ZM44 2a2 2 0 0 1 2 2h4a6 6 0 0 0-6-6v4ZM4-2a6 6 0 0 0-6 6h4a2 2 0 0 1 2-2v-4Z" fill="#E5E5E5"/></svg>
       </a>
-      <a href="#" class="card-grid-toggle" type="button">
-        <svg aria-hidden="true" focusable="false" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 29H16v2h16v-2ZM30 19v6H18v-6h12Zm2-2H16v10h16V17Z" fill="#000"/><path d="M4 2h40v-4H4v4Zm42 2v40h4V4h-4Zm-2 42H4v4h40v-4ZM2 44V4h-4v40h4Zm2 2a2 2 0 0 1-2-2h-4a6 6 0 0 0 6 6v-4Zm42-2a2 2 0 0 1-2 2v4a6 6 0 0 0 6-6h-4ZM44 2a2 2 0 0 1 2 2h4a6 6 0 0 0-6-6v4ZM4-2a6 6 0 0 0-6 6h4a2 2 0 0 1 2-2v-4Z" fill="#E5E5E5"/></svg>
+      <a href="#" class="card-grid-toggle">
         <span class="visually-hidden">Показать одну карточку</span>
+        <svg aria-hidden="true" focusable="false" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 29H16v2h16v-2ZM30 19v6H18v-6h12Zm2-2H16v10h16V17Z" fill="#000"/><path d="M4 2h40v-4H4v4Zm42 2v40h4V4h-4Zm-2 42H4v4h40v-4ZM2 44V4h-4v40h4Zm2 2a2 2 0 0 1-2-2h-4a6 6 0 0 0 6 6v-4Zm42-2a2 2 0 0 1-2 2v4a6 6 0 0 0 6-6h-4ZM44 2a2 2 0 0 1 2 2h4a6 6 0 0 0-6-6v4ZM4-2a6 6 0 0 0-6 6h4a2 2 0 0 1 2-2v-4Z" fill="#E5E5E5"/></svg>
       </a>
-      <a href="#" class="card-grid-toggle" type="button">
-        <svg aria-hidden="true" focusable="false" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 17h-2v2h2v-2ZM32 17H20v2h12v-2ZM18 21h-2v2h2v-2ZM32 21H20v2h12v-2ZM18 25h-2v2h2v-2ZM32 25H20v2h12v-2ZM18 29h-2v2h2v-2ZM32 29H20v2h12v-2Z" fill="#000"/><path d="M4 2h40v-4H4v4Zm42 2v40h4V4h-4Zm-2 42H4v4h40v-4ZM2 44V4h-4v40h4Zm2 2a2 2 0 0 1-2-2h-4a6 6 0 0 0 6 6v-4Zm42-2a2 2 0 0 1-2 2v4a6 6 0 0 0 6-6h-4ZM44 2a2 2 0 0 1 2 2h4a6 6 0 0 0-6-6v4ZM4-2a6 6 0 0 0-6 6h4a2 2 0 0 1 2-2v-4Z" fill="#E5E5E5"/></svg>
+      <a href="#" class="card-grid-toggle">
         <span class="visually-hidden">Показать список</span>
+        <svg aria-hidden="true" focusable="false" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 17h-2v2h2v-2ZM32 17H20v2h12v-2ZM18 21h-2v2h2v-2ZM32 21H20v2h12v-2ZM18 25h-2v2h2v-2ZM32 25H20v2h12v-2ZM18 29h-2v2h2v-2ZM32 29H20v2h12v-2Z" fill="#000"/><path d="M4 2h40v-4H4v4Zm42 2v40h4V4h-4Zm-2 42H4v4h40v-4ZM2 44V4h-4v40h4Zm2 2a2 2 0 0 1-2-2h-4a6 6 0 0 0 6 6v-4Zm42-2a2 2 0 0 1-2 2v4a6 6 0 0 0 6-6h-4ZM44 2a2 2 0 0 1 2 2h4a6 6 0 0 0-6-6v4ZM4-2a6 6 0 0 0-6 6h4a2 2 0 0 1 2-2v-4Z" fill="#E5E5E5"/></svg>
       </a>
       </div>
 
@@ -249,7 +258,9 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
-      <p>Гостиниц на странице:</p>
+
+      <h3 class="pagination-title">Гостиниц на странице:</h3>
+      <div class="pagination-select pagination-sorting-type">
       <select class="pagination-select-control" aria-label="Сортировка количество гостиниц">
         <option value="four">4</option>
         <option value="ten">10</option>
@@ -257,7 +268,7 @@
         <option value="fifty">50</option>
       </select>
       </div>
-    </section>
+      </div>
 
       <section class="subscribe">
         <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
@@ -273,6 +284,7 @@
           <input class="subscribe-button" type="submit" value="Подписаться">
         </form>
       </section>
+      </div>
     </main>
 
     <footer class="page-footer">
