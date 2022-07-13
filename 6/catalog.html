@@ -26,17 +26,18 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link-right" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Корзина</span>
+            <a class="navigation-link-right" href="#">
+              <span class="visually-hidden">Избранное</span>
+              <span class="navigation-number-right">12</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-button" href="#">Хочу сюда!</a>
+            <a class="navigation-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -184,9 +185,9 @@
           <a class="hotel-card-link" href="#">Подробнее</a>
           <button class="hotel-button">В избранное</button>
           <div class="raiting">
-            <span>Четыре звезды</span>
-          </div>
+            <svg width="140" height="37" viewBox="0 0 140 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 10 2.1 6.5H18l-5.6 4 2.2 6.5L9 23l-5.6 4 2.2-6.5-5.6-4h6.9L9 10ZM33 10l2.1 6.5H42l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L33 10ZM57 10l2.1 6.5H66l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L57 10ZM81 10l2.1 6.5H90l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L81 10Z" fill="#83B3D3"/></svg>
           <p class="hotel-card-raiting-button">Рейтинг: 8,5</p>
+        </div>
         </li>
 
         <li class="hotel-card">
@@ -201,9 +202,9 @@
             В избранном
           </button>
           <div class="raiting">
-            <span>Четыре звезды</span>
-          </div>
+            <svg width="140" height="37" viewBox="0 0 140 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 10 2.1 6.5H18l-5.6 4 2.2 6.5L9 23l-5.6 4 2.2-6.5-5.6-4h6.9L9 10ZM33 10l2.1 6.5H42l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L33 10ZM57 10l2.1 6.5H66l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L57 10ZM81 10l2.1 6.5H90l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L81 10Z" fill="#83B3D3"/></svg>
           <p class="hotel-card-raiting-button">Рейтинг: 9,2</p>
+        </div>
         </li>
 
         <li class="hotel-card">
@@ -216,9 +217,9 @@
           <a class="hotel-card-link" href="#">Подробнее</a>
           <button class="hotel-button">В избранное</button>
           <div class="raiting">
-            <span>Три звезды</span>
-          </div>
+            <svg width="140" height="37" viewBox="0 0 140 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 10 2.1 6.5H18l-5.6 4 2.2 6.5L9 23l-5.6 4 2.2-6.5-5.6-4h6.9L9 10ZM33 10l2.1 6.5H42l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L33 10ZM57 10l2.1 6.5H66l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L57 10Z" fill="#83B3D3"/></svg>
           <p class="hotel-card-raiting-button">Рейтинг: 6,9</p>
+        </div>
         </li>
 
         <li class="hotel-card">
@@ -231,11 +232,13 @@
           <a class="hotel-card-link" href="#">Подробнее</a>
           <button class="hotel-button">В избранное</button>
           <div class="raiting">
-            <span>Две звезды</span>
-          </div>
+            <svg width="140" height="37" viewBox="0 0 140 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 10 2.1 6.5H18l-5.6 4 2.2 6.5L9 23l-5.6 4 2.2-6.5-5.6-4h6.9L9 10ZM33 10l2.1 6.5H42l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L33 10Z" fill="#83B3D3"/></svg>
           <p class="hotel-card-raiting-button">Рейтинг: 5,0</p>
+        </div>
         </li>
       </ul>
+
+      <hr class="hr">
 
       <div class="pagination-container">
         <ul class="pagination">
@@ -278,7 +281,6 @@
         </p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
           <label>
-            Ваш e-mail
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required />
           </label>
           <input class="subscribe-button" type="submit" value="Подписаться">
